@@ -1,0 +1,17 @@
+@font-face{
+  font-family:gotham_blackregular;
+    src:url(fonts/ufonts.com_gotham-black-webfont.woff2) format('woff2'),
+        url(fonts/ufonts.com_gotham-black-webfont.woff) format('woff');font-weight:400;font-style:normal
+}
+@font-face{
+  font-family:gotham_bookregular;src:
+    url('fonts/Gotham Book Regular.eot');src:local('☺'),
+    url('fonts/Gotham Book Regular.woff') format('woff'),url('fonts/Gotham Book Regular.ttf') format('truetype'),url('fonts/Gotham Book Regular.svg') format('svg');font-weight:400;font-style:normal}
+
+.consulti-title {
+  font-family: "gotham_blackregular";
+}
+
+.consulti-title-secondary {
+  font-family: "gotham_bookregular";
+}
