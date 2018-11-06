@@ -19,12 +19,14 @@ function login(username,password){
       fpass: password
     },
     success: function (php_response){
+      $('#login-form').trigger("reset");
       if (php_response == '"OK"'){
         alert('ingreso existoso');
-        $('#login-form').trigger("reset");
+
       }else{
         alert ("El usuario o contraseña ingresada no son correctos, intenta de nuevo.");
       }
+
     }
   });
 }
