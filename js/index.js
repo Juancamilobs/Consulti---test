@@ -5,7 +5,21 @@ $(document).ready(function(){
     var fname = $('#user_name').val();
     var fpass = $('#password').val();
     login(fname,fpass);
+  });
+
+  $(document).keypress( function (e) {
+    var key = e.which;
+    if (key == 13) {
+      var fname = $('#user_name').val();
+      var fpass = $('#password').val();
+      login(fname,fpass);
+      return false;
+    }
   })
+  $('#welcome-text').text(function () {
+    return $(this).text().replace("###user###", sessionStorage.username);
+  });
+
 
 });
 
@@ -19,12 +33,25 @@ function login(username,password){
       fpass: password
     },
     success: function (php_response){
-      if (php_response == '"OK"'){
-        alert('ingreso existoso');
-        $('#login-form').trigger("reset");
-      }else{
-        alert ("El usuario o contraseña ingresada no son correctos, intenta de nuevo.");
+      answer = JSON.parse(php_response);
+      if (answer !== null){
+        if(answer.acceso == "OK"){
+          window.sessionStorage.username = answer.name;
+          resetForm();
+          document.location.href = "./Home/";
+        }else {
+          alert ("Error de credenciales");
+          resetForm();
+        }
+      }else {
+        alert ("Error de credenciales");
+        resetForm();
       }
     }
   });
+}
+
+function resetForm(){
+  $('#user_name').val("");
+  $('#password').val("");
 }
