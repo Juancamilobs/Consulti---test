@@ -33,6 +33,7 @@ function login(username,password){
       fpass: password
     },
     success: function (php_response){
+<<<<<<< HEAD
       answer = JSON.parse(php_response);
       if (answer !== null){
         if(answer.acceso == "OK"){
@@ -46,7 +47,16 @@ function login(username,password){
       }else {
         alert ("Error de credenciales");
         resetForm();
+=======
+      $('#login-form').trigger("reset");
+      if (php_response == '"OK"'){
+        alert('ingreso existoso');
+
+      }else{
+        alert ("El usuario o contraseña ingresada no son correctos, intenta de nuevo.");
+>>>>>>> 61f67ef49e7d669c322d8136f81457d6fba5eb8b
       }
+
     }
   });
 }
