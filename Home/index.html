@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="../css/consulti-mods.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title>Consulti - administradores</title>
+</head>
   <body>
-    <span id="welcome-text">Bienvenido ###user###</span>
+    <nav>
+      <div class="nav-wrapper blue darken-4">
+         <a href="#" class="brand-logo center consulti-title">Consulti</a>
+         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" id="logOut">Cerrar sesión</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" id="logOut-mobile">Cerrar sesión</a></li>
+      </ul>
+      </div>
+    </nav>
+    <div class=" blue center">
+      <div class="row">
+        <span class="consulti-title-secondary col-s12" id="user-identification"> Hola ###username### !</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row left">
+        <span class="consulti-title-secondary col s12"> Por favor ingresa los datos de la cita que deseas agendar!</span>
+      </div>
+      <div class="row grey-text">
+        <div class="col s12">
+          <h6 class="consulti-title">Formulario de cita</h6>
+        </div>
+      </div>
+      <div class="row">
+        <form>
+    <div class="container">
+      <div class="input-field col m6 s12">
+          <input type="text" placeholder="Email" id="email-paciente">
+          <label for="email-paciente">email paciente</label>
+          <a class="btn-small blue" id="search-pac">Buscar
+              <i class="material-icons right">search</i>
+          </a>
+      </div>
+      <div class="input-field col m6 s12">
+          <input type="text" placeholder="Email" id="email-medico" class="validate ">
+          <label for="email-mmedico">nombre del médico</label>
+          <a class="btn-small blue" id="search-med">Buscar
+              <i class="material-icons right">search</i>
+          </a>
+      </div>
+      <div class="input-field col m6 s12">
+          <input type="text" id="fecha-cita" class="datepicker">
+          <label for="fecha-cita">fecha de la cita</label>
+      </div>
+       <div class="input-field col m6 s12">
+          <input type="text" id="hora-cita" class="timepicker">
+          <label for="hora-cita">hora de la cita</label>
+      </div>
+          <div class="input-field col s12">
+          <input type="text" id="motivo-cita">
+          <label for="motivo-cita">motivo de la cita</label>
+      </div>
+      <div class="row center">
+        <a class="btn-small blue" id="set-Date">Agendar
+            <i class="material-icons right">send</i>
+        </a>
+      </div>
+
+
+
+  </div>
+ </form>
+      </div>
+
+    </div>
+
+
 
 
     <script type="text/javascript" src="../js/jquery.js"></script>

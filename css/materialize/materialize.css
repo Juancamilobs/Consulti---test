@@ -7201,8 +7201,8 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #4c9ef1;
+  box-shadow: 0 1px 0 0 #4c9ef1;
 }
 
 /* line 61, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/forms/_input-fields.scss */
@@ -9771,7 +9771,7 @@ input[type=range]::-ms-thumb {
 /* line 57, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_datepicker.scss */
 .datepicker-date-display {
   flex: 1 auto;
-  background-color: #26a69a;
+  background-color: #4c9ef1;
   color: #fff;
   padding: 20px 22px;
   font-weight: 500;
@@ -9836,12 +9836,12 @@ input[type=range]::-ms-thumb {
 
 /* line 109, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_datepicker.scss */
 .datepicker-table td.is-today {
-  color: #26a69a;
+  color: #4c9ef1;
 }
 
 /* line 113, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_datepicker.scss */
 .datepicker-table td.is-selected {
-  background-color: #26a69a;
+  background-color: #4c9ef1;
   color: #fff;
 }
 
@@ -9884,7 +9884,7 @@ input[type=range]::-ms-thumb {
 .datepicker-clear,
 .datepicker-today,
 .datepicker-done {
-  color: #26a69a;
+  color: #4c9ef1;
   padding: 0 1rem;
 }
 
@@ -9942,7 +9942,7 @@ input[type=range]::-ms-thumb {
 /* line 19, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
 .timepicker-digital-display {
   flex: 1 auto;
-  background-color: #26a69a;
+  background-color: #4c9ef1;
   padding: 10px;
   font-weight: 300;
 }
@@ -10065,7 +10065,7 @@ input[type=range]::-ms-thumb {
 
 /* line 122, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
 .timepicker-canvas line {
-  stroke: #26a69a;
+  stroke: #4c9ef1;
   stroke-width: 4;
   stroke-linecap: round;
 }
@@ -10078,13 +10078,13 @@ input[type=range]::-ms-thumb {
 /* line 131, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
 .timepicker-canvas-bearing {
   stroke: none;
-  fill: #26a69a;
+  fill:#4c9ef1;
 }
 
 /* line 135, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
 .timepicker-canvas-bg {
   stroke: none;
-  fill: #26a69a;
+  fill: #4c9ef1;
 }
 
 /* Footer */
@@ -10103,7 +10103,7 @@ input[type=range]::-ms-thumb {
 
 /* line 153, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
 .timepicker-close {
-  color: #26a69a;
+  color: #4c9ef1;
 }
 
 /* line 157, C:/Users/juanc/Downloads/materialize-src-v1.0.0/materialize-src/sass/components/_timepicker.scss */
